@@ -1,0 +1,81 @@
+.image-container {
+    float: right;
+    background-color:rgb(144, 255, 213);
+    outline: 4px solid rgb(0, 75, 19);
+    max-width: 235px;
+    margin: 5px;
+    animation-name:fade-in;
+    animation-delay:0.75s;
+    animation-duration:1s;
+    animation-fill-mode:backwards;
+}
+.image-container img {
+    width: 215px;
+    height: auto;
+    padding: 10px;
+}
+.image-container p {
+    font-size: 14px;
+    margin-left: 15px;
+    margin-top: 0px;
+}
+.image-container hr {
+    border: none;
+    border-top: 4px solid rgb(0, 75, 19);
+}
+.image-container a {
+    color:#42d196
+}
+.image-container a:visited {
+    color:#154430
+}
+.image-container a:hover {
+    color:#b5ffe0
+}
+h2 {
+    font-size: 35px;
+    color: #42d155;
+    font-family: 'Ludica Console', monospace;
+    animation-duration: 1s;
+    animation-name:fade-in;
+    animation-delay:0.5s;
+    animation-fill-mode:backwards;
+}
+h1 {
+    animation-name:fade-in;
+    animation-duration:1s;
+    animation-fill-mode:backwards;
+}
+p {
+    animation-name:fade-in;
+    animation-delay:0.75s;
+    animation-duration:1s;
+    animation-fill-mode:backwards;
+}
+#sources-break {
+    border:none;
+    border-top: 3px solid rgb(159, 255, 169)
+}
+.sourcelinks a {
+    color:#42d196
+}
+.sourcelinks a:visited {
+    color:#154430
+}
+.sourcelinks a:hover {
+    color:#b5ffe0
+}
+.license {
+    font-size: 11px !important;
+}
+@media screen and (max-width: 600px){
+    .image-container {
+        float:none;
+        margin-left:auto;
+        margin-right:auto;
+    }
+}
+@keyframes fade-in {
+    from {opacity:0;transform: translate(0,50px);}
+    to {opacity:1;transform: translate(0,0);}
+}

@@ -1,0 +1,81 @@
+body {background-color: #f0fff0;}
+#menu-bar {background-color:#79dbb2;padding:5px;position:fixed;top:0;left:0;width:100%;}
+#logo {
+    height:60px;
+    float: left;
+    transition: background-color 0.3s;
+}
+#menu-bar img:hover {
+    background-color:#42d155;
+}
+h1 {
+    color: #42d155;
+    margin-top: 100px;
+    font-family: 'Ludica Console', monospace;
+    font-size:50px;
+}
+p {
+    color: #3dc24f;
+    font-family: 'Verdana', monospace;
+    font-size: 20px;
+}
+#menu-links {
+    display: flex;
+    height: 60px;
+}
+#menu-links a {
+    text-align: center;
+    font-size: 24px;
+    padding: 16px 15px;
+    font-family: 'Arial', sans-serif;
+    color:rgb(0, 90, 30);
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+#menu-links a:hover {
+    background-color: #42d155;
+    color: white;
+}
+#dropbtn {
+    display: none;
+}
+#dropbtn img {
+    height: 20px;
+    position: relative;
+    right: 0;
+}
+@media screen and (max-width: 600px) {
+    #link-container {
+        position: relative;
+        display: inline-block;
+    }
+    #dropbtn {
+        display: block;
+        text-align: center;
+        font-size: 28px;
+        padding: 16px 15px;
+        font-family: 'Arial', sans-serif;
+        background-color:#3dc24f;
+        color:#094016;
+        text-decoration: none;
+        transition: background-color 0.3s;
+        width: 200px;
+        border: 2px solid #094016;
+    }
+    #menu-links {
+        display:none;
+        position:absolute;
+        min-width: 200px;
+    }
+    #menu-links a {
+        display: block;
+        background-color:#3dc24f;
+        border: 2px solid #094016;
+    }
+    #link-container:hover #menu-links{
+        display: block;
+    }
+    #link-container:hover #dropbtn {
+        background-color: #42d155;
+    }
+}
